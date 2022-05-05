@@ -88,6 +88,7 @@ header {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-color);
+  transition: transform 250ms ease;
 }
 
 .header-contact-link {
@@ -223,7 +224,7 @@ button {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: color 2050ms cubic-bezier(0.4, 0, 0.2, 1);  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .site-nav .link.curred {
@@ -399,6 +400,7 @@ img {
 .social-team-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  transition: transform 250ms ease;
 }
 
 /* Clients */
@@ -445,6 +447,7 @@ img {
 .icon-clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
+  transition: transform 250ms ease;
 }
 
 /* Features */
@@ -531,6 +534,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: transform 250ms ease;
 }
 
 
@@ -573,6 +577,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms ease;
 }
 
 
@@ -621,6 +626,7 @@ address {
 .footer-link:focus,
 .footer-link:hover {
   color: var(--accent-color);
+  transition: transform 250ms ease;
 }
 
 .footer-link-grey {
@@ -636,6 +642,7 @@ address {
 .footer-link-grey:focus, 
 .footer-link-grey:hover {
   color: var(--accent-color);
+  transition: transform 250ms ease;
 }
 
 .footer>.container {
@@ -688,6 +695,7 @@ address {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
+  transition: transform 250ms ease;
 }
 
 /* Portfolio */
@@ -742,3 +750,49 @@ address {
   margin-right: 30px;
 }
 
+.box {
+  position: relative;
+  width: 100%;
+  height: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.box:hover .overlay {
+  transform: translatex(0);
+  transition: transform 250ms ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  padding-right: 24px;
+  padding-bottom: 60px;
+  padding-left: 24px;
+  background-color: var(--accent-color);
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.overlay>p {
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  margin: 0;
+  font-size: 18px;
+}
+
+.overlay code {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
