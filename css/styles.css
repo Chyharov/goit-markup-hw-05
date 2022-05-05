@@ -72,6 +72,8 @@ p {
 header {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   border-bottom: 1px solid #EEEEEE;
 }
 
@@ -83,12 +85,12 @@ header {
   margin-right: 10px;
 }
 
-.head-contact-link:hover,
-.head-contact-link:focus {
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: var(--accent-color);
 }
 
-.head-contact-link {
+.header-contact-link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -102,6 +104,9 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+
+
 
 .contacts-nav {
   color: var(--primary-text-color);
@@ -200,6 +205,7 @@ button {
 }
 
 .site-nav .link {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -217,11 +223,36 @@ button {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  transition: color 2050ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .site-nav .link.curred {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
+
+.curred::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transform: translateY(29px);
+}
+
+
+/* .site-nav .link:hover::after,
+.site-nav .link:focus::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transform: translateY(29px);
+} - ниждний бордер при ховере и фокусе*/
 
 /* hero */
 
@@ -710,3 +741,4 @@ address {
 .flex-elemet-studio:not(:last-child) {
   margin-right: 30px;
 }
+
