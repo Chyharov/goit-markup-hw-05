@@ -107,6 +107,8 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: var(--transition-hover-focus);
 }
 
 
@@ -233,6 +235,8 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transform: var(--transition-hover-focus);
 }
 
 .site-nav .link:hover,
@@ -404,6 +408,8 @@ img {
   color: #afb1b8;
   background-color: transparent;
   border-radius: 50%;
+
+  transform: var(--transition);
 }
 
 .icon-team {
@@ -450,6 +456,7 @@ img {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
 }
 
 .icon-clients {
@@ -833,7 +840,7 @@ address {
 
   opacity: 1;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition);
 }
 
 .backdrop.is-hidden {
@@ -859,7 +866,7 @@ address {
 
   transform: translate(-50%, -50%) scale(1);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition);
 }
 
 .modal-button {
