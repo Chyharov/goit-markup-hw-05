@@ -22,14 +22,14 @@ html {
   --transition-overlay: transform 250ms ease;
   --transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-hover-focus: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-family: Roboto, sans-serif; 
+  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
@@ -101,7 +101,7 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color:var(--title-text-color);
+  color: var(--title-text-color);
 
   text-decoration: none;
   font-weight: 500;
@@ -129,7 +129,8 @@ header {
 /* Logo */
 
 .logo {
-  margin-right: 93px;;
+  margin-right: 93px;
+  ;
   color: var(--accent-color);
 
   font-family: 'Raleway', sans-serif;
@@ -164,11 +165,14 @@ header {
   outline: 2px solid tomato; */
 }
 
-.list, .feature-list, .cards {
+.list,
+.feature-list,
+.cards {
   list-style: none;
 }
 
-.about-company-list, .about-comand-list {
+.about-company-list,
+.about-comand-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,14 +233,14 @@ button {
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
-  
+
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  
+
   transition: var(--transition-hover-focus);
 }
 
@@ -247,7 +251,7 @@ button {
 
 .site-nav .link.curred {
   color: var(--accent-color);
-  
+
 }
 
 .curred::after {
@@ -302,8 +306,8 @@ img {
 
 
 .section.no-padding {
- padding-top: 0;
- padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section-title {
@@ -356,11 +360,11 @@ img {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  }
+}
 
 .team-card-text {
   padding-top: 30px;
@@ -532,8 +536,8 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -576,8 +580,8 @@ img {
 .cards-link:hover,
 .cards-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -630,8 +634,8 @@ address {
 }
 
 .footer-link-grey {
-  color:rgba(255, 255, 255, 0.6);
-  
+  color: rgba(255, 255, 255, 0.6);
+
   font-style: normal;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -641,7 +645,7 @@ address {
   transition: var(--transition-hover-focus);
 }
 
-.footer-link-grey:focus, 
+.footer-link-grey:focus,
 .footer-link-grey:hover {
   color: var(--accent-color);
 }
